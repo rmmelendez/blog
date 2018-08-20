@@ -29,7 +29,8 @@ class User extends Authenticatable
 
     public function roles()
     {
-        return $this->belongsToMany(Role::class,'assigned_roles'); //Se agrega el nombre que le dimos a la tabla ya que no utilizamos la convención.
+        return $this->belongsToMany(Role::class,'assigned_roles'); 
+        //Se agrega el nombre que le dimos a la tabla ya que no utilizamos la convención.
     }
 
     public function hasRoles(array $roles)
